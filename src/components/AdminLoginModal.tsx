@@ -57,7 +57,7 @@ export const AdminLoginModal: React.FC<AdminLoginModalProps> = ({ isOpen, onClos
         <div style={styles.header}>
           <div style={styles.titleRow}>
             <div style={styles.iconCircle}>
-              <Shield size={22} color="#4F46E5" />
+              <Shield size={22} color="#DB2777" />
             </div>
             <div>
               <h3 style={styles.title}>Admin Authentication</h3>
@@ -185,7 +185,7 @@ const styles: Record<string, React.CSSProperties> = {
     width: '42px',
     height: '42px',
     borderRadius: '12px',
-    backgroundColor: '#EEF2FF',
+    backgroundColor: '#FDF2F8',
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
@@ -255,7 +255,7 @@ const styles: Record<string, React.CSSProperties> = {
   },
   submitBtn: {
     marginTop: '6px',
-    backgroundColor: '#4F46E5',
+    backgroundColor: '#DB2777',
     color: '#ffffff',
     border: 'none',
     padding: '11px',

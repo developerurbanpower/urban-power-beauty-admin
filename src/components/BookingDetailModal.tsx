@@ -94,7 +94,7 @@ export const BookingDetailModal: React.FC<BookingDetailModalProps> = ({
       payment_failed: { bg: '#FEE2E2', text: '#991B1B', label: 'Payment Failed' },
       confirmed: { bg: '#DBEAFE', text: '#1E40AF', label: 'Confirmed (Paid)' },
       awaiting_assignment: { bg: '#FEE2E2', text: '#DC2626', label: 'Action Needed: Unassigned' },
-      assigned: { bg: '#EDE9FE', text: '#6D28D9', label: 'Assigned to Partner' },
+      assigned: { bg: '#FCE7F3', text: '#BE185D', label: 'Assigned to Partner' },
       accepted: { bg: '#E0E7FF', text: '#3730A3', label: 'Accepted by Partner' },
       en_route: { bg: '#CFFAFE', text: '#0E7490', label: 'Partner En Route' },
       arrived: { bg: '#FCE7F3', text: '#BE185D', label: 'Partner Arrived' },
@@ -120,7 +120,7 @@ export const BookingDetailModal: React.FC<BookingDetailModalProps> = ({
       return { bg: '#DCFCE7', text: '#15803D', border: '#86EFAC', label: 'Accepted' };
     }
     if (normalized === 'assigned') {
-      return { bg: '#EDE9FE', text: '#6D28D9', border: '#C4B5FD', label: 'Assigned (Awaiting Response)' };
+      return { bg: '#FCE7F3', text: '#BE185D', border: '#F9A8D4', label: 'Assigned (Awaiting Response)' };
     }
     if (normalized === 'reassigned') {
       return { bg: '#F1F5F9', text: '#475569', border: '#CBD5E1', label: 'Superseded / Reassigned' };
@@ -246,7 +246,7 @@ export const BookingDetailModal: React.FC<BookingDetailModalProps> = ({
             {/* Customer & Doorstep Address Card */}
             <div style={styles.card}>
               <h3 style={styles.cardTitle}>
-                <User size={15} color="#7C3AED" style={{ marginRight: 6 }} />
+                <User size={15} color="#DB2777" style={{ marginRight: 6 }} />
                 Customer & Doorstep Location
               </h3>
 
@@ -278,7 +278,7 @@ export const BookingDetailModal: React.FC<BookingDetailModalProps> = ({
               <div style={{ marginBottom: 8 }}>
                 <span style={styles.infoLabel}>Full Service Address</span>
                 <div style={styles.addressBlock}>
-                  <MapPin size={14} color="#7C3AED" style={{ flexShrink: 0, marginTop: 2 }} />
+                  <MapPin size={14} color="#DB2777" style={{ flexShrink: 0, marginTop: 2 }} />
                   <div>
                     <div style={{ fontWeight: 600, color: '#0F172A' }}>
                       {currentBooking.addressText}
@@ -307,7 +307,7 @@ export const BookingDetailModal: React.FC<BookingDetailModalProps> = ({
 
               {currentBooking.notes && (
                 <div style={styles.noteCallout}>
-                  <FileText size={13} color="#6D28D9" style={{ marginRight: 6, flexShrink: 0 }} />
+                  <FileText size={13} color="#DB2777" style={{ marginRight: 6, flexShrink: 0 }} />
                   <div>
                     <strong>Customer Note:</strong> {currentBooking.notes}
                   </div>
@@ -318,7 +318,7 @@ export const BookingDetailModal: React.FC<BookingDetailModalProps> = ({
             {/* Schedule, Current Partner & OTP Verification Status */}
             <div style={styles.card}>
               <h3 style={styles.cardTitle}>
-                <Calendar size={15} color="#7C3AED" style={{ marginRight: 6 }} />
+                <Calendar size={15} color="#DB2777" style={{ marginRight: 6 }} />
                 Appointment Schedule & Assigned Partner
               </h3>
 
@@ -471,7 +471,7 @@ export const BookingDetailModal: React.FC<BookingDetailModalProps> = ({
             {/* Financials & Doorstep Cash Collection */}
             <div style={styles.card}>
               <h3 style={styles.cardTitle}>
-                <IndianRupee size={15} color="#7C3AED" style={{ marginRight: 6 }} />
+                <IndianRupee size={15} color="#DB2777" style={{ marginRight: 6 }} />
                 Payment & Doorstep Cash Collection
               </h3>
 
@@ -552,7 +552,7 @@ export const BookingDetailModal: React.FC<BookingDetailModalProps> = ({
           {currentBooking.completionPhotoUrl && (
             <div style={styles.card}>
               <h3 style={styles.cardTitle}>
-                <Camera size={15} color="#7C3AED" style={{ marginRight: 6 }} />
+                <Camera size={15} color="#DB2777" style={{ marginRight: 6 }} />
                 Service Completion Proof Photo (Cloudinary Verified)
               </h3>
               <div style={styles.proofContainer}>
@@ -590,7 +590,7 @@ export const BookingDetailModal: React.FC<BookingDetailModalProps> = ({
           {/* Partner Assignment & Rejection History */}
           <div style={styles.card}>
             <h3 style={styles.cardTitle}>
-              <History size={15} color="#7C3AED" style={{ marginRight: 6 }} />
+              <History size={15} color="#DB2777" style={{ marginRight: 6 }} />
               Partner Assignment & Rejection History ({historyList.length})
             </h3>
 
@@ -753,7 +753,7 @@ const styles: Record<string, React.CSSProperties> = {
   assignHeaderBtn: {
     display: 'inline-flex',
     alignItems: 'center',
-    backgroundColor: '#7C3AED',
+    backgroundColor: '#DB2777',
     color: '#ffffff',
     border: 'none',
     borderRadius: '8px',
@@ -865,7 +865,7 @@ const styles: Record<string, React.CSSProperties> = {
     alignItems: 'center',
     fontSize: '13px',
     fontWeight: 700,
-    color: '#7C3AED',
+    color: '#DB2777',
     textDecoration: 'none',
   },
   divider: {
@@ -889,14 +889,14 @@ const styles: Record<string, React.CSSProperties> = {
     marginTop: '6px',
     fontSize: '11px',
     fontWeight: 700,
-    color: '#7C3AED',
+    color: '#DB2777',
     textDecoration: 'none',
   },
   noteCallout: {
     display: 'flex',
     alignItems: 'flex-start',
-    backgroundColor: '#F5F3FF',
-    color: '#4C1D95',
+    backgroundColor: '#FDF2F8',
+    color: '#831843',
     padding: '8px 10px',
     borderRadius: '8px',
     fontSize: '12px',

@@ -108,7 +108,7 @@ const styles: Record<string, React.CSSProperties> = {
     width: '36px',
     height: '36px',
     borderRadius: '8px',
-    backgroundColor: '#7C3AED',
+    backgroundColor: '#DB2777',
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
@@ -141,8 +141,8 @@ const styles: Record<string, React.CSSProperties> = {
     transition: 'all 0.15s ease',
   },
   navLinkActive: {
-    backgroundColor: '#EDE9FE',
-    color: '#6D28D9',
+    backgroundColor: '#FDF2F8',
+    color: '#BE185D',
   },
   authArea: {
     display: 'flex',
@@ -167,7 +167,7 @@ const styles: Record<string, React.CSSProperties> = {
   logoutBtn: {
     display: 'flex',
     alignItems: 'center',
-    backgroundColor: '#F1F5F9',
+    backgroundColor: '#F8FAFC',
     color: '#475569',
     border: '1px solid #CBD5E1',
     borderRadius: '8px',
@@ -180,7 +180,7 @@ const styles: Record<string, React.CSSProperties> = {
   loginBtn: {
     display: 'flex',
     alignItems: 'center',
-    backgroundColor: '#4F46E5',
+    backgroundColor: '#DB2777',
     color: '#ffffff',
     border: 'none',
     borderRadius: '8px',

@@ -130,7 +130,7 @@ export const AssignmentModal: React.FC<Props> = ({
         <div style={styles.header}>
           <div>
             <div style={styles.headerBadge}>
-              <Sparkles size={14} color="#7C3AED" style={{ marginRight: 6 }} />
+              <Sparkles size={14} color="#DB2777" style={{ marginRight: 6 }} />
               <span>Smart Recommendation Engine</span>
             </div>
             <h2 style={styles.title}>Assign Beautician to Appointment</h2>
@@ -361,8 +361,8 @@ const styles: Record<string, React.CSSProperties> = {
   headerBadge: {
     display: 'inline-flex',
     alignItems: 'center',
-    backgroundColor: '#EDE9FE',
-    color: '#6D28D9',
+    backgroundColor: '#FDF2F8',
+    color: '#BE185D',
     fontSize: '12px',
     fontWeight: '700',
     padding: '4px 10px',
@@ -560,7 +560,7 @@ const styles: Record<string, React.CSSProperties> = {
   confirmBtn: {
     display: 'flex',
     alignItems: 'center',
-    backgroundColor: '#7C3AED',
+    background: 'linear-gradient(135deg, #EC4899 0%, #DB2777 100%)',
     color: '#ffffff',
     border: 'none',
     padding: '8px 16px',
@@ -568,11 +568,14 @@ const styles: Record<string, React.CSSProperties> = {
     fontSize: '13px',
     fontWeight: '700',
     cursor: 'pointer',
+    boxShadow: '0 2px 8px rgba(219, 39, 119, 0.25)',
     transition: 'background-color 0.15s ease',
   },
   confirmBtnDisabled: {
+    background: '#CBD5E1',
     backgroundColor: '#CBD5E1',
     color: '#64748B',
+    boxShadow: 'none',
     cursor: 'not-allowed',
   },
 };
